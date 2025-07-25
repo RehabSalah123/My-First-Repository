@@ -39,6 +39,8 @@
     </picture>
         </picture>
     </p>
+
+    <p>
     <h1>
         <table border="2">
             <thead>
@@ -67,31 +69,53 @@
             </tbody>
         </table>
         <h1>Registration Form</h1>
-        <form>
-<label for="">Name:</label>
-<input type="text"><br> <br>
-<label for="">Age:</label>
-<input type="number"><br> <br>
+        <form method="">
+<label for="fullname">Name:</label>
+<input type="text" id="fullname" name="full-name" required><br> <br>
+
+<label for="Age">Age:</label>
+<input type="number" id="Age" name="user-age" required><br> <br>
+
 <label for="">Gender</label>
 <input type="radio" name="Gender" value="Female"> Female 
 <input type="radio" name="Gender" value="Male"> Male <br><br>
+
 <label for="">Shift</label>
 <select>
     <option>---Select---</option>
     <option value="Morning">Morning</option>
     <option value="Afternoon">Afternoon</option>
 </select> <br><br>
-<label for="">Phone Number</label>
-<input type="tel"> <br><br>
+
+<label for="Phone">Phone Number</label>
+<input type="tel" id="Phone"> <br><br>
+
 <label for="">Skills</label>
+
 <input type="checkbox" value="HTML">HTML
 <input type="checkbox" value="CSS">CSS <br><br>
+
 <label for="">Email</label>
 <input type="email"><br><br>
+
 <label for="">Password</label>
 <input type="password"><br><br>
-<input type="submit" value="submit">
+
+<label for="">Message</label>
+<textarea rows="10" cols="50"></textarea> <br><br>
+
+<input type="submit" value="submit">  
+<input type="reset" value="reset">
         </form>
+      </p>
+
+        <p>
+          <form action="https://www.google.com/search" method="get" target="_blank">
+            <label for="query">search:</label>
+            <input type="text" name="q" id="query">
+            <input type="submit" value="Search from Google">
+          </form>
+      </p>
     </h1>
 </body>
 </html>
